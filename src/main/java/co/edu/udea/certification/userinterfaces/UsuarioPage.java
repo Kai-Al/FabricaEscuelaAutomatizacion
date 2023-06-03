@@ -19,6 +19,8 @@ public class UsuarioPage extends PageObject {
     // UNITS/IDUNIT***************************************
     public static final Target BUTTON_UNITS_PENCIL = Target.the("Button pencil in the route /units/idunit").locatedBy("/html/body/div[1]/main/div[2]/button[2]");
     public static final Target OPTION_UNITS_ACADEMIC_SUBUNIT = Target.the("Option Department of computer science").locatedBy("//*[@id=\"__next\"]/main/section[2]/div/div");
+    public static final Target BUTTON_UNITS_RECYCLEBIN = Target.the("Button Recycle bin in the route /units/idunit").locatedBy("/html/body/div[1]/main/div[2]/button[1]");
+    public static final Target TV_UNITS_DELETE = Target.the("Text to validate No se puede eliminar una unidad académica que tiene subunidades académicas").locatedBy("//*[@id=\"swal2-html-container\"]");
 
     // UNITS/IDUNIT/EDIT-UNIT*****************************
     public static final Target BUTTON_UNITS_EDITUNIT_PLUS = Target.the("Button + in the route /units/idunit/edit-unit").locatedBy("/html/body/div[1]/main/form/fieldset[2]/div/div/button");

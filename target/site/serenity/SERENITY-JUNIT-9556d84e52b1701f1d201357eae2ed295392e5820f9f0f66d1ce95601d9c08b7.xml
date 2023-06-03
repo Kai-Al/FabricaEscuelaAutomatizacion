@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Delete an academic unit" skipped="0" tests="1" time="9.81" timestamp="2023-06-03 03:09:19"><testcase name="From the home page I can go to the academic unit and if the academic unit has subunits I cannot delete the academic unit"/></testsuite>

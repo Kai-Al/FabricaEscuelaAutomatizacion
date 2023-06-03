@@ -21,7 +21,7 @@ public class CreateNewAcademicProgramStepDefinitions {
     private Actor admin = Actor.named("LosSuperConocidos");
 
     @Given("I am in the home page of PLA 3")
-    public void iAmInTheHomePageCreateNewAcademicSubunit(){
+    public void iAmInTheHomePageCreateNewAcademicProgram(){
         // We maximize the window
         driver.manage().window().maximize();
 
@@ -30,13 +30,13 @@ public class CreateNewAcademicProgramStepDefinitions {
     }
 
     @When("I link a new academic program to an academic subunit")
-    public void fillAcademicSubunitForm(){
+    public void fillAcademicProgramForm(){
 
         admin.attemptsTo(GoToAcademicProgramFormAndFill.solve(new UsuarioPage()));
     }
 
     @Then("I can save the new academic program")
-    public void saveNewAcademicSubunit(){
+    public void saveNewAcademicProgram(){
         admin.should(seeThat(IsSuccessfulOperation.verify(),equalTo(false)));
     }
 }
