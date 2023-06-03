@@ -28,7 +28,7 @@ public class TryToDeleteAcademicUnitWithAcademicSubunities implements Task {
         // Route: units
         actor.attemptsTo(new SetValue("Faculty of Engineering", INPUT_UNITS_SEARCH));
         actor.attemptsTo(ClickOn.the(BUTTON_UNITS_SEARCH));
-        actor.attemptsTo(ClickOn.the(OPTION_UNITS_ENGINEERING_FACULTY));
+        actor.attemptsTo(ClickOn.the(OPTION_UNITS_ENGINEERING_FACULTY2));
 
         // Route: units/idUnit
         actor.attemptsTo(ClickOn.the(BUTTON_UNITS_RECYCLEBIN));

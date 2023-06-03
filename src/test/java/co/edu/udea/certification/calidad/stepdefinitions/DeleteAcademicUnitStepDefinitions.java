@@ -1,6 +1,7 @@
 package co.edu.udea.certification.calidad.stepdefinitions;
 
 import co.edu.udea.certification.questions.IsSuccessfulOperation;
+import co.edu.udea.certification.questions.IsSuccessfulOperationDeletingAcademicUnit;
 import co.edu.udea.certification.questions.IsThereAnErrorDeletingAcademicUnit;
 import co.edu.udea.certification.tasks.GoToAcademicUnitFormAndFill;
 import co.edu.udea.certification.tasks.TryToDeleteAcademicUnitWithAcademicSubunities;
@@ -61,6 +62,6 @@ public class DeleteAcademicUnitStepDefinitions {
     @Then("I can delete the academy unit")
     public void deleteAcademicUnit(){
         //admin.should(seeThat(ISeeThreeOptionsForInvesting.verify(),equalTo(true)));
-        admin.should(seeThat(IsThereAnErrorDeletingAcademicUnit.verify(),equalTo(true)));
+        admin.should(seeThat(IsSuccessfulOperationDeletingAcademicUnit.verify(),equalTo(true)));
     }
 }
