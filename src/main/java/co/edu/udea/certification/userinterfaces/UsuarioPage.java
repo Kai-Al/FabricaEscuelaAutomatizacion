@@ -14,11 +14,11 @@ public class UsuarioPage extends PageObject {
     public static final Target BUTTON_UNITS_PLUS = Target.the("Button + in the route /units").locatedBy("/html/body/div[1]/main/div/button");
     public static final Target INPUT_UNITS_SEARCH = Target.the("Input Buscar unidad").locatedBy("/html/body/div[1]/main/form/div/input");
     public static final Target BUTTON_UNITS_SEARCH = Target.the("Button Buscar unidad").locatedBy("/html/body/div[1]/main/form/button");
-    public static final Target OPTION_UNITS_ENGINEERING_FACULTY = Target.the("Option Facultad de ingenieria").locatedBy("//*[@id=\"/units/34\"]");
+    public static final Target OPTION_UNITS_ENGINEERING_FACULTY = Target.the("Option Facultad de ingenieria").locatedBy("//*[@id=\"/units/49\"]");
 
     // UNITS/IDUNIT***************************************
     public static final Target BUTTON_UNITS_PENCIL = Target.the("Button pencil in the route /units/idunit").locatedBy("/html/body/div[1]/main/div[2]/button[2]");
-    public static final Target OPTION_UNITS_ACADEMIC_SUBUNIT = Target.the("Option Department of computer science").locatedBy("//*[@id=\"/subunits/11\"]");
+    public static final Target OPTION_UNITS_ACADEMIC_SUBUNIT = Target.the("Option Department of computer science").locatedBy("//*[@id=\"/subunits/16\"]");
 
     // UNITS/IDUNIT/EDIT-UNIT*****************************
     public static final Target BUTTON_UNITS_EDITUNIT_PLUS = Target.the("Button + in the route /units/idunit/edit-unit").locatedBy("/html/body/div[1]/main/form/fieldset[2]/div/div/button");
