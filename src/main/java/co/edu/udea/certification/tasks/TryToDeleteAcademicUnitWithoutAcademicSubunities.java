@@ -1,8 +1,6 @@
 package co.edu.udea.certification.tasks;
 
 import co.edu.udea.certification.interactions.ClickOn;
-import co.edu.udea.certification.interactions.SelectOption;
-import co.edu.udea.certification.interactions.SetRandomValue;
 import co.edu.udea.certification.interactions.SetValue;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.Actor;
@@ -12,10 +10,10 @@ import net.serenitybdd.screenplay.actions.Open;
 
 import static co.edu.udea.certification.userinterfaces.UsuarioPage.*;
 
-public class TryToDeleteAcademicUnitWithAcademicSubunities implements Task {
+public class TryToDeleteAcademicUnitWithoutAcademicSubunities implements Task {
     private final PageObject page;
 
-    public TryToDeleteAcademicUnitWithAcademicSubunities(PageObject page){
+    public TryToDeleteAcademicUnitWithoutAcademicSubunities(PageObject page){
         this.page = page;
     }
 
@@ -28,13 +26,15 @@ public class TryToDeleteAcademicUnitWithAcademicSubunities implements Task {
         // Route: units
         actor.attemptsTo(new SetValue("Faculty of Engineering", INPUT_UNITS_SEARCH));
         actor.attemptsTo(ClickOn.the(BUTTON_UNITS_SEARCH));
-        actor.attemptsTo(ClickOn.the(OPTION_UNITS_ENGINEERING_FACULTY));
+        actor.attemptsTo(ClickOn.the(OPTION_UNITS_ENGINEERING_FACULTY2));
 
         // Route: units/idUnit
         actor.attemptsTo(ClickOn.the(BUTTON_UNITS_RECYCLEBIN));
+        actor.attemptsTo(ClickOn.the(BUTTON_UNITS_CONFIRM_DELETE));
+
     }
 
-    public static TryToDeleteAcademicUnitWithAcademicSubunities solve(PageObject page){
-        return Tasks.instrumented(TryToDeleteAcademicUnitWithAcademicSubunities.class, page);
+    public static TryToDeleteAcademicUnitWithoutAcademicSubunities solve(PageObject page){
+        return Tasks.instrumented(TryToDeleteAcademicUnitWithoutAcademicSubunities.class, page);
     }
 }

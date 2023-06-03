@@ -1,1 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Delete an academic unit" skipped="0" tests="1" time="9.81" timestamp="2023-06-03 03:09:19"><testcase name="From the home page I can go to the academic unit and if the academic unit has subunits I cannot delete the academic unit"/></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Delete an academic unit" skipped="0" tests="2" time="20.09" timestamp="2023-06-03 03:27:31"><testcase name="From the home page I can go to the academic unit and if the academic unit has subunits I cannot delete the academic unit"/><testcase name="From the home page I can go to the academic unit and if the academic unit does not have subunits I can delete the academic unit"><failure message="&#13;&#10;Expected: &lt;true&gt;&#13;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">&#13;
+Expected: &lt;true&gt;&#13;
+     but: was &lt;false&gt;</failure><system-err>&#13;
+Expected: &lt;true&gt;&#13;
+     but: was &lt;false&gt;&#13;
+co.edu.udea.certification.calidad.stepdefinitions.DeleteAcademicUnitStepDefinitions.deleteAcademicUnit(DeleteAcademicUnitStepDefinitions.java:64)&#13;
+✽.I can delete the academy unit(file:///D:/TODO/Ingeniería/Ingeniería%20de%20Sistemas%20U.%20de%20A/SEMESTRES/Semestre%20X%20-%202023-1/Calidad%20del%20software/FabricaEscuelaAutomatizacion/src/test/resources/features/delete_academic_unit.feature:13)&#13;
+</system-err></testcase></testsuite>

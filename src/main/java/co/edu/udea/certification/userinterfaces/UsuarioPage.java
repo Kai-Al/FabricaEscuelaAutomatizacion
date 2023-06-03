@@ -15,11 +15,14 @@ public class UsuarioPage extends PageObject {
     public static final Target INPUT_UNITS_SEARCH = Target.the("Input Buscar unidad").locatedBy("/html/body/div[1]/main/form/div/input");
     public static final Target BUTTON_UNITS_SEARCH = Target.the("Button Buscar unidad").locatedBy("/html/body/div[1]/main/form/button");
     public static final Target OPTION_UNITS_ENGINEERING_FACULTY = Target.the("Option Facultad de ingenieria").locatedBy("//*[@id=\"__next\"]/main/div/div");
+    public static final Target OPTION_UNITS_ENGINEERING_FACULTY2 = Target.the("Option Facultad de ingenieria").locatedBy("//*[@id=\"__next\"]/main/div/div[2]");
+    public static final Target TV_UNITS_A_U = Target.the("Text to validate Unidades academicas").locatedBy("/html/body/div[1]/main/h2");
 
     // UNITS/IDUNIT***************************************
     public static final Target BUTTON_UNITS_PENCIL = Target.the("Button pencil in the route /units/idunit").locatedBy("/html/body/div[1]/main/div[2]/button[2]");
     public static final Target OPTION_UNITS_ACADEMIC_SUBUNIT = Target.the("Option Department of computer science").locatedBy("//*[@id=\"__next\"]/main/section[2]/div/div");
     public static final Target BUTTON_UNITS_RECYCLEBIN = Target.the("Button Recycle bin in the route /units/idunit").locatedBy("/html/body/div[1]/main/div[2]/button[1]");
+    public static final Target BUTTON_UNITS_CONFIRM_DELETE = Target.the("Button Si, eliminar /units/idunit").locatedBy("/html/body/div[2]/div/div[6]/button[1]");
     public static final Target TV_UNITS_DELETE = Target.the("Text to validate No se puede eliminar una unidad académica que tiene subunidades académicas").locatedBy("//*[@id=\"swal2-html-container\"]");
 
     // UNITS/IDUNIT/EDIT-UNIT*****************************
