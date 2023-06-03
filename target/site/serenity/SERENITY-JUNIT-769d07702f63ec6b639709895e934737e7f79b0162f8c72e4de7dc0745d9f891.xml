@@ -1,8 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Create new academic subunit" skipped="0" tests="1" time="15.55" timestamp="2023-06-03 01:37:43"><testcase name="From the home page I can go to the academic units list, choose one and link a new academic subunit"><failure message="&#13;&#10;Expected: &lt;false&gt;&#13;&#10;     but: was &lt;true&gt;" type="java.lang.AssertionError">&#13;
-Expected: &lt;false&gt;&#13;
-     but: was &lt;true&gt;</failure><system-err>&#13;
-Expected: &lt;false&gt;&#13;
-     but: was &lt;true&gt;&#13;
-co.edu.udea.certification.calidad.stepdefinitions.CreateNewAcademicSubunitStepDefinitions.saveNewAcademicSubunit(CreateNewAcademicSubunitStepDefinitions.java:40)&#13;
-✽.I can save the new academic subunit(file:///D:/TODO/Ingeniería/Ingeniería%20de%20Sistemas%20U.%20de%20A/SEMESTRES/Semestre%20X%20-%202023-1/Calidad%20del%20software/FabricaEscuelaAutomatizacion/src/test/resources/features/create_new_academic_subunit.feature:8)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Create new academic subunit" skipped="0" tests="1" time="14.62" timestamp="2023-06-03 01:53:21"><testcase name="From the home page I can go to the academic units list, choose one and link a new academic subunit"/></testsuite>

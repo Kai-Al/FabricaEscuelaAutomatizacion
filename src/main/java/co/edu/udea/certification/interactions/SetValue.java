@@ -9,7 +9,7 @@ import org.openqa.selenium.Keys;
 
 import java.util.Random;
 
-import static co.edu.udea.certification.userinterfaces.UsuarioPage.INPUT_AMOUNT_TO_SIMULATE;
+
 import net.serenitybdd.screenplay.targets.Target;
 
 public class SetValue implements Interaction{

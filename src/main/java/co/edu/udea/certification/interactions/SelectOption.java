@@ -7,7 +7,6 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 
 import static co.edu.udea.certification.userinterfaces.UsuarioPage.*;
-import static co.edu.udea.certification.userinterfaces.UsuarioPage.INPUT_BIRTH_DATE_DAY;
 
 public class SelectOption implements Interaction{
     private final Target select;

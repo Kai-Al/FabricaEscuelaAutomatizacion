@@ -1,11 +1,8 @@
 package co.edu.udea.certification.calidad.stepdefinitions;
 
-import co.edu.udea.certification.questions.ISeeThreeOptionsForInvesting;
 import co.edu.udea.certification.questions.IsSuccessfulOperation;
 import co.edu.udea.certification.tasks.*;
 import co.edu.udea.certification.userinterfaces.UsuarioPage;
-import io.cucumber.java.Before;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
