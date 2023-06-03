@@ -12,6 +12,26 @@ public class UsuarioPage extends PageObject {
 
     // UNITS**********************************************
     public static final Target BUTTON_UNITS_PLUS = Target.the("Button + in the route /units").locatedBy("/html/body/div[1]/main/div/button");
+    public static final Target INPUT_UNITS_SEARCH = Target.the("Input Buscar unidad").locatedBy("/html/body/div[1]/main/form/div/input");
+    public static final Target BUTTON_UNITS_SEARCH = Target.the("Button Buscar unidad").locatedBy("/html/body/div[1]/main/form/button");
+    public static final Target OPTION_UNITS_ENGINEERING_FACULTY = Target.the("Option Facultad de ingenieria").locatedBy("//*[@id=\"/units/34\"]");
+
+    // UNITS/IDUNIT***************************************
+    public static final Target BUTTON_UNITS_PENCIL = Target.the("Button pencil in the route /units/idunit").locatedBy("/html/body/div[1]/main/div[2]/button[2]");
+
+    // UNITS/IDUNIT/EDIT-UNIT*****************************
+    public static final Target BUTTON_UNITS_EDITUNIT_PLUS = Target.the("Button + in the route /units/idunit/edit-unit").locatedBy("/html/body/div[1]/main/form/fieldset[2]/div/div/button");
+
+    //UNITS/IDUNIT/CREATE-SUBUNIT*************************
+    public static final Target INPUT_UNITS_CREATESUBUNIT_SUBUNIT_ACADEMIC_NAME = Target.the("Input Nombre de la subunidad academica").locatedBy("//*[@id=\"nameAcademicSubUnit\"]");
+    public static final Target INPUT_UNITS_CREATESUBUNIT_SUBUNIT_ACADEMIC_CODE = Target.the("Input Codigo de la subunidad academica").locatedBy("//*[@id=\"codeAcademicSubUnit\"]");
+    public static final Target SELECT_UNITS_CREATESUBUNIT_ACADEMIC_SUBUNIT_TYPE = Target.the("Select Tipo de subunidad academica").locatedBy("//*[@id=\"typeAcademicSubUnit\"]");
+    public static final Target OPTION_UNITS_CREATESUBUNIT_ACADEMIC_SUBUNIT_TYPE = Target.the("Option Tipo de subunidad academica").locatedBy("//*[@id=\"typeAcademicSubUnit\"]/option[2]");
+    public static final Target INPUT_UNITS_CREATESUBUNIT_BOSS_NAME = Target.the("Input Nombre del jefe").locatedBy("//*[@id=\"headName\"]");
+    public static final Target INPUT_UNITS_CREATESUBUNIT_DESCRIPTION = Target.the("Input Descripcion").locatedBy("//*[@id=\"description\"]");
+    public static final Target BUTTON_UNITS_CREATESUBUNIT_SEND = Target.the("Input Chulito").locatedBy("/html/body/div[1]/main/form/div/button[1]");
+    // TV: Text to validate
+    public static final Target TV_UNITS_CREATESUBUNIT_SENT = Target.the("Text to validate Operacion exitosa").locatedBy("//*[@id=\"swal2-title\"]");
 
     // CREATE_UNIT****************************************
     public static final Target INPUT_CREATEUNIT_UNIT_ACADEMIC_NAME = Target.the("Input Nombre de la unidad academica").locatedBy("//*[@id=\"nameAcademicUnit\"]");

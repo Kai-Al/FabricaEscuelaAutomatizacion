@@ -6,9 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/create_new_academic_unit.feature",
+        features = "src/test/resources/features/create_new_academic_subunit.feature",
         glue = "co.edu.udea.certification.calidad.stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
-public class CreateNewAcademicUnit {
+public class CreateNewAcademicSubunit {
 }

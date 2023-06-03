@@ -1,11 +1,9 @@
 package co.edu.udea.certification.calidad.stepdefinitions;
 
-import co.edu.udea.certification.questions.ISeeThreeOptionsForInvesting;
 import co.edu.udea.certification.questions.IsSuccessfulOperation;
-import co.edu.udea.certification.tasks.*;
+import co.edu.udea.certification.tasks.GoToAcademicSubunitFormAndFill;
+import co.edu.udea.certification.tasks.GoToAcademicUnitFormAndFill;
 import co.edu.udea.certification.userinterfaces.UsuarioPage;
-import io.cucumber.java.Before;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -17,19 +15,13 @@ import org.openqa.selenium.WebDriver;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.core.IsEqual.equalTo;
 
-public class CreateNewAcademicUnitStepDefinitions {
+public class CreateNewAcademicSubunitStepDefinitions {
     @Managed(driver = "chrome")
     public WebDriver driver;
     private Actor admin = Actor.named("LosSuperConocidos");
 
-    /*@Before
-    public void preStage(){
-        /*driver.manage().window().maximize();
-        investor.can(BrowseTheWeb.with(driver));
-    }*/
-
-    @Given("I am in the home page of PLA")
-    public void iAmInTheHomePage(){
+    @Given("I am in the home page of PLA 2")
+    public void iAmInTheHomePageCreateNewAcademicSubunit(){
         // We maximize the window
         driver.manage().window().maximize();
 
@@ -37,14 +29,14 @@ public class CreateNewAcademicUnitStepDefinitions {
         admin.can(BrowseTheWeb.with(driver));
     }
 
-    @When("I go to academic unit form and fill it")
-    public void fillAcademicUnitForm(){
-        admin.attemptsTo(GoToAcademicUnitFormAndFill.solve(new UsuarioPage()));
+    @When("I link a new academic subunit to an academic unit")
+    public void fillAcademicSubunitForm(){
+
+        admin.attemptsTo(GoToAcademicSubunitFormAndFill.solve(new UsuarioPage()));
     }
 
-    @Then("I can save a new academic unit")
-    public void saveNewAcademicUnit(){
-        //admin.should(seeThat(ISeeThreeOptionsForInvesting.verify(),equalTo(true)));
+    @Then("I can save the new academic subunit")
+    public void saveNewAcademicSubunit(){
         admin.should(seeThat(IsSuccessfulOperation.verify(),equalTo(true)));
     }
 }

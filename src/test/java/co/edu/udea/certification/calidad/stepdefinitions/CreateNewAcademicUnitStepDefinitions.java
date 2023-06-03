@@ -28,8 +28,8 @@ public class CreateNewAcademicUnitStepDefinitions {
         investor.can(BrowseTheWeb.with(driver));
     }*/
 
-    @Given("I am in the home page of PLA")
-    public void iAmInTheHomePage(){
+    @Given("I am in the home page of PLA 1")
+    public void iAmInTheHomePageCreateNewAcademicUnit(){
         // We maximize the window
         driver.manage().window().maximize();
 

@@ -12,7 +12,7 @@ public class IsSuccessfulOperation implements Question<Boolean> {
     public Boolean answeredBy(Actor actor) {
         String stringTemporal = actor.asksFor(Text.of(TV_CREATEUNIT_SENT).asString());
         System.out.println(stringTemporal+"*******************************");
-        return stringTemporal.contains("n exitosa");
+        return stringTemporal.contains("Operaci") && stringTemporal.contains("n exitosa");
     }
 
     public static IsSuccessfulOperation verify(){
